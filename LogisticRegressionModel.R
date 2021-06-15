@@ -7,7 +7,7 @@ library(fastDummies)
 library(MASS)
 
 ##......Read The Data......##
-setwd('C:/Users/Aniket/OneDrive - Cal State Fullerton/Acad/ISDS 574/Final Project/New folder')
+setwd('C:/Users/abc/New folder')
 data = read.csv('bank-full.csv', head=T, stringsAsFactors=F, na.strings='')
 
 View(data)
@@ -243,9 +243,9 @@ corrplot(cor_cat, method = "color", type="lower",bg='red', addCoef.col = 'red', 
 ##########################################################################
 
 
-write.csv(data,'C:/Users/Aniket/OneDrive - Cal State Fullerton/Acad/ISDS 574/Final Project/New folder/Clean_Data.csv', row.names = FALSE)
+write.csv(data,'C:/Users/abc/Clean_Data.csv', row.names = FALSE)
 
-c_data <- read.csv('C:/Users/Aniket/OneDrive - Cal State Fullerton/Acad/ISDS 574/Final Project/New folder/Clean_Data.csv', header = T)
+c_data <- read.csv('C:/Users/abc/Clean_Data.csv', header = T)
 str(c_data)
 
 #drop unwanted columns from the data
